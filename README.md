@@ -34,8 +34,8 @@ The goal is to ensure each PAN number adheres to the official format and is accu
  * Next 4 characters → Digits (0–9)
  * Last character → Alphabet
 
-**Additional Constraints: Standard Format (AAAAA1234A)**
-❌  No Repeating Adjacent Characters: Prevented entries like 'AABCD' or '1123'.
+**Additional Constraints: Standard Format (AAAAA1234A)**  
+❌  No Repeating Adjacent Characters: Prevented entries like 'AABCD' or '1123'.  
 ❌  No Sequential Characters: Alphabets and numbers cannot form a continuous sequence (e.g., 'ABCDE' or '1234' are flagged as invalid)
  
 ---
