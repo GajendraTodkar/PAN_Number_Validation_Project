@@ -29,13 +29,12 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## ✅ Validation Rules
 
 ### A valid PAN must:
-<pre>
+
  * Be exactly 10 characters long
  * Follow pattern     → AAAAA1234A
  * First 5 characters → Alphabets (A–Z)
  * Next 4 characters  → Digits (0–9)
  * Last character     → Alphabet
-</pre>
 
 ### Additional Constraints: Standard Format (AAAAA1234A)
 
