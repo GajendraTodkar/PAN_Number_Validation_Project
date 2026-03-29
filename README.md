@@ -74,7 +74,7 @@ The final query generates a summary report:
 ```
 PAN_Number_Validation_Project/
 │
-├── Datasets/                         → Raw datasets used for the project. (ERP and CRM data)
+├── Datasets/                         → Raw dataset used for the project. 
 │
 ├── Scripts/                          
 │   ├── Functions_usingSQL_server.sql → Custom functions (dbo.adj_char & dbo.seq_char)
