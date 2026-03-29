@@ -45,6 +45,7 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ### 🔹 User-Defined Functions (UDFs):
  * dbo.adj_char() → Detects adjacent repeating characters.
  * dbo.seq_char() → Detects sequential character patterns (both letters and digits).
+   
 <div style="display: flex; gap: 20px;">
 
 <div style="flex: 1;">
