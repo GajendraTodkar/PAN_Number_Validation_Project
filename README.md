@@ -18,9 +18,9 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ---
 
 ## 🧹 Data Cleaning Steps
- * Removed duplicate records using DISTINCT
- * Trimmed leading/trailing spaces using TRIM()
- * Standardized text using UPPER()
+ * Removed duplicate records using **DISTINCT**
+ * Trimmed leading/trailing spaces using **TRIM()**
+ * Standardized text using **UPPER()**
  * Filtered out missing or blank values
  * Deduplication: Identified and removed duplicate entries. 
 
@@ -30,22 +30,22 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 
 **A valid PAN must:**
  * Be exactly 10 characters long
- * Follow pattern: AAAAA1234A
+ * Follow pattern     → AAAAA1234A
  * First 5 characters → Alphabets (A–Z)
- * Next 4 characters → Digits (0–9)
- * Last character → Alphabet
+ * Next 4 characters  → Digits (0–9)
+ * Last character     → Alphabet
 
 **Additional Constraints: Standard Format (AAAAA1234A)**  
 
- *  No Repeating Adjacent Characters: Prevented entries like 'AABCD' or '1123'.  
- *  No Sequential Characters: Alphabets and numbers cannot form a continuous sequence (e.g., 'ABCDE' or '1234' are flagged as invalid)
+ *  No Repeating Adjacent Characters: Prevented entries like **'AABCD'** or **'1123'**.  
+ *  No Sequential Characters: Alphabets and numbers cannot form a continuous sequence (e.g., **'ABCDE'** or **'1234'** are flagged as invalid)
  
 ---
 
 ## ⚙️ Implementation Details
 ### 🔹 User-Defined Functions (UDFs):
- * dbo.adj_char() → Detects adjacent repeating characters.
- * dbo.seq_char() → Detects sequential character patterns (both letters and digits).
+ * **dbo.adj_char()** → Detects adjacent repeating characters.
+ * **dbo.seq_char()** → Detects sequential character patterns (both letters and digits).
 
 ---
 
