@@ -47,8 +47,8 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## ⚙️ Implementation Details
 ### 🔹 User-Defined Functions (UDFs):  
 
- * **dbo.adj_char()** → Detects adjacent repeating characters.
- * **dbo.seq_char()** → Detects sequential character patterns (both letters and digits).
+ * **dbo.adj_char()** → Detects adjacent repeating characters.
+ * **dbo.seq_char()** → Detects sequential character patterns (both letters and digits).
 
 ---
 
@@ -63,10 +63,10 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## 📊 Results & Reporting
 The final query generates a summary report:
 
-**- Total Records:             10,000**  
-**- Total Valid PANs:          3,186**  
-**- Total Invalid PANs:        5,839**  
-**- Missing / Removed Records: 975**  
+**- Total Records:             10,000**  
+**- Total Valid PANs:          3,186**  
+**- Total Invalid PANs:        5,839**  
+**- Missing / Removed Records: 975**  
 
 ---
 
