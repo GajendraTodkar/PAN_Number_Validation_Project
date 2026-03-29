@@ -1,10 +1,9 @@
 <h1 align="center">  💳 PAN Card Validation using SQL </h1>
-
 ---
 
 ## 📌 Project Overview
 
-This project focuses on data cleaning and validation of PAN (Permanent Account Number) records using SQL Server. 
+This project focuses on data cleaning and validation of PAN (Permanent Account Number) records using SQL Server.  
 The goal is to ensure each PAN number adheres to the official format and is accurately classified as Valid or Invalid.
 
 ---
@@ -57,10 +56,10 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## 📊 Results & Reporting
 The final query generates a summary report:
 
-**- Total Records: 10,000**
-**- Total Valid PANs: 3,186**
-**- Total Invalid PANs: 5,839**
-**- Missing / Removed Records: 975**
+**- Total Records: 10,000**  
+**- Total Valid PANs: 3,186**  
+**- Total Invalid PANs: 5,839**  
+**- Missing / Removed Records: 975**  
 
 ---
 
@@ -84,7 +83,7 @@ PAN_Number_Validation_Project/
 
 Everything is for Free!
 
-- **[Datasets](datasets/):** Access to the project dataset (csv files).  <br>
+- **[Datasets](https://github.com/GajendraTodkar/PAN_Number_Validation_Project/tree/main/Dataset):** Access to the project dataset (csv files).  <br>
 - **[SQL Server Express](https://www.microsoft.com/en-us/sql-server/sql-server-downloads):** Lightweight server for hosting your SQL database.  <br>
 - **[SQL Server Management Studio (SSMS)](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16):** GUI for managing and interacting with databases.
 
