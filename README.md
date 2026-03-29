@@ -68,9 +68,9 @@ The final query generates a summary report:
 ```
 PAN_Number_Validation_Project/
 │
-├── datasets/                         → Raw datasets used for the project. (ERP and CRM data)
+├── Datasets/                         → Raw datasets used for the project. (ERP and CRM data)
 │
-├── scripts/                          →  Project documentation and architecture details.
+├── Scripts/                          
 │   ├── Functions_usingSQL_server.sql → Custom functions (dbo.adj_char & dbo.seq_char)
 │   ├── QA_Script.sql                 → Exploratory analysis
 │   ├── Final_script.sql              → Main validation query
