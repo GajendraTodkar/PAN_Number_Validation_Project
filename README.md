@@ -65,8 +65,8 @@ The final query generates a summary report:
 
 **- Total Records:         10,000**  
 **- Total Valid PANs:       3,186**  
-**- Total Invalid PANs:      5,839**  
-**- Missing Records:             975**  
+**- Total Invalid PANs:     5,839**  
+**- Missing Records:              975**  
 
 ---
 
