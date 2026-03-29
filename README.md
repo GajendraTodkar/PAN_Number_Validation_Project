@@ -45,6 +45,60 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ### 🔹 User-Defined Functions (UDFs):
  * dbo.adj_char() → Detects adjacent repeating characters.
  * dbo.seq_char() → Detects sequential character patterns (both letters and digits).
+<div style="display: flex; gap: 20px;">
+
+<div style="flex: 1;">
+
+<b>dbo.adj_char()</b>
+
+<pre style="background-color:#1e1e1e; color:#dcdcdc; padding:15px; border-radius:8px; overflow-x:auto;">
+<code style="color:#9cdcfe;">
+CREATE FUNCTION dbo.adj_char(@str VARCHAR(100))
+RETURNS BIT
+AS
+BEGIN
+    DECLARE @i INT = 1;
+    WHILE @i < LEN(@str)
+    BEGIN
+        IF SUBSTRING(@str, @i, 1) = SUBSTRING(@str, @i + 1, 1)
+            RETURN 1;
+        SET @i = @i + 1;
+    END
+    RETURN 0;
+END;
+</code>
+</pre>
+
+</div>
+
+<div style="flex: 1;">
+
+<b>dbo.seq_char()</b>
+
+<pre style="background-color:#1e1e1e; color:#dcdcdc; padding:15px; border-radius:8px; overflow-x:auto;">
+<code style="color:#9cdcfe;">
+CREATE FUNCTION dbo.seq_char(@str VARCHAR(100))
+RETURNS BIT
+AS
+BEGIN
+    DECLARE @i INT = 1;
+    WHILE @i < LEN(@str) - 1
+    BEGIN
+        IF ASCII(SUBSTRING(@str, @i, 1)) + 1 = ASCII(SUBSTRING(@str, @i + 1, 1))
+           AND ASCII(SUBSTRING(@str, @i + 1, 1)) + 1 = ASCII(SUBSTRING(@str, @i + 2, 1))
+            RETURN 1;
+        SET @i = @i + 1;
+    END
+    RETURN 0;
+END;
+</code>
+</pre>
+
+</div>
+
+</div>
+
+---
 
 ### 🔹 SQL Techniques Used
  * CTEs: Used a chain of Common Table Expressions (clean_data, valid_data, categorized_data) to keep the final query readable and performant.
