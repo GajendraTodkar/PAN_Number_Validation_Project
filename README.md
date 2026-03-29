@@ -28,14 +28,14 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 
 ## ✅ Validation Rules
 
-**A valid PAN must:**
+### A valid PAN must:
  * Be exactly 10 characters long
  * Follow pattern     → AAAAA1234A
  * First 5 characters → Alphabets (A–Z)
  * Next 4 characters  → Digits (0–9)
  * Last character     → Alphabet
 
-**Additional Constraints: Standard Format (AAAAA1234A)**  
+### Additional Constraints: Standard Format (AAAAA1234A)
 
  *  No Repeating Adjacent Characters: Prevented entries like **'AABCD'** or **'1123'**.  
  *  No Sequential Characters: Alphabets and numbers cannot form a continuous sequence (e.g., **'ABCDE'** or **'1234'** are flagged as invalid)
@@ -50,10 +50,10 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ---
 
 ### 🔹 SQL Techniques Used
- * CTEs: Used a chain of Common Table Expressions (clean_data, valid_data, categorized_data) to keep the final query readable and performant.
- * Pattern matching using LIKE
- * String functions (SUBSTRING, TRIM, UPPER)
- * Conditional logic using CASE
+ * **CTEs**: Used a chain of Common Table Expressions (clean_data, valid_data, categorized_data) to keep the final query readable and performant.
+ * Pattern matching using **LIKE**
+ * String functions **(SUBSTRING, TRIM, UPPER)**
+ * Conditional logic using **CASE**
 
 ---
 
