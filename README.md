@@ -64,8 +64,8 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 The final query generates a summary report:
 
 **- Total Records:              10,000**  
-**- Total Valid PANs:           3,186**  
-**- Total Invalid PANs:         5,839**  
+**- Total Valid PANs:            3,186**  
+**- Total Invalid PANs:           5,839**  
 **- Missing / Removed Records: 975**  
 
 ---
