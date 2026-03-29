@@ -1,6 +1,5 @@
 <h1 align="center">  💳 PAN Card Validation using SQL </h1>
 
----
 ## 📌 Project Overview
 
 This project focuses on data cleaning and validation of PAN (Permanent Account Number) records using SQL Server.  
