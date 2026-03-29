@@ -31,10 +31,10 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ### A valid PAN must:
 
  * Be exactly 10 characters long
- * Follow pattern     → AAAAA1234A
- * First 5 characters → Alphabets (A–Z)
- * Next 4 characters  → Digits (0–9)
- * Last character     → Alphabet
+ * Follow pattern     → AAAAA1234A
+ * First 5 characters → Alphabets (A–Z)
+ * Next 4 characters  → Digits (0–9)
+ * Last character     → Alphabet
 
 
 ### Additional Constraints: Standard Format (AAAAA1234A)
@@ -47,7 +47,7 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## ⚙️ Implementation Details
 ### 🔹 User-Defined Functions (UDFs):  
 
- * **dbo.adj_char()** → Detects adjacent repeating characters.
+ * **dbo.adj_char()**  → Detects adjacent repeating characters.
  * **dbo.seq_char()** → Detects sequential character patterns (both letters and digits).
 
 ---
@@ -63,9 +63,9 @@ The goal is to ensure each PAN number adheres to the official format and is accu
 ## 📊 Results & Reporting
 The final query generates a summary report:
 
-**- Total Records:             10,000**  
-**- Total Valid PANs:          3,186**  
-**- Total Invalid PANs:        5,839**  
+**- Total Records:               10,000**  
+**- Total Valid PANs:             3,186**  
+**- Total Invalid PANs:            5,839**  
 **- Missing / Removed Records: 975**  
 
 ---
